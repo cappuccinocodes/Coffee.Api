@@ -1,4 +1,8 @@
+using Coffee.Api.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<ICoffeeRepository, CoffeeRepository>();
 
 // Add services to the container.
 
